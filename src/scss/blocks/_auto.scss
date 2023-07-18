@@ -1,0 +1,16 @@
+.auto{
+  padding-bottom: 100px;
+  &__item{
+    width: 380px;
+    padding: 7px 5px 11px;
+    text-align: center;
+    border: 1px solid #C4C4C4;
+  }
+  &__item--active{
+    background-color: #5A0D67;
+    color: #fff;
+  }
+  &__text{
+    margin: 23px 0 5px;
+  }
+}

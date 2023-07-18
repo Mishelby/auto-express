@@ -1,0 +1,78 @@
+.header {
+  background-image: url(../../img/header-bg.jpg);
+  height: 700px;
+  position: relative;
+  margin-bottom: 200px;
+  &::before{
+    content: '';
+    background-image: url(../../img/ford-bg.png);
+    position: absolute;
+    width: 814px;
+    height: 462px;
+    top: 438px;
+    right: 200px;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 47px  0 45px;
+    margin-bottom: 60px;
+  }
+  &__number {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    &:hover {
+      color: var(--accent);
+    }
+  }
+  &__content {
+    max-width: 762px;
+  }
+  &__title {
+    color: var(--title);
+    font-size: 72px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: var(--Oswald-Regular-400);
+  }
+  &__subtitle {
+    color: var(--title);
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 30px;
+    font-family: var(--Oswald-Regular-400);
+  }
+  &__content-text {
+    color: var(--title);
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  &__content-links {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0 20px;
+  }
+  &__content-link {
+    margin-right: 10px;
+    &:last-child{
+      margin-right: 0;
+    }
+    &:hover {
+      svg {
+        path {
+          transition: all .3s;
+          fill: var(--accent);
+        }
+      }
+    }
+  }
+}
