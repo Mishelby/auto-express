@@ -57,7 +57,7 @@ gulp.task('sass:dev', function () {
 			.pipe(plumber(plumberNotify('SCSS')))
 			.pipe(sourceMaps.init())
 			.pipe(sassGlob())
-			.pipe(sass())
+      .pipe(sass({ outputStyle: 'compressed' }))
 			.pipe(sourceMaps.write())
 			.pipe(gulp.dest('./build/css/'))
 	);

@@ -26,6 +26,7 @@
 		"jquery": "^3.7.0",
 		"npm": "^9.7.2",
 		"sass": "^1.63.4",
+		"slick-carousel": "^1.8.1",
 		"style-loader": "^3.3.3",
 		"swiper": "^10.0.4",
 		"webpack-stream": "^7.0.0"
