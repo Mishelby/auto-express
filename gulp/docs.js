@@ -105,6 +105,7 @@ gulp.task('files:docs', function () {
 		.pipe(gulp.dest('./docs/files/'));
 });
 
+
 gulp.task('js:docs', function () {
 	return gulp
 		.src('./src/js/*.js')
