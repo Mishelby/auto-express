@@ -31,7 +31,9 @@
   line-height: 21px;
   font-weight: 300;
   background-color: var(--btn-bg);
-  padding: 14px 55px;
+  padding: 14px 5px;
+  min-width: 250px;
+  text-align: center;
   display: inline-block;
   transition: all .3s;
   font-family: var(--Oswald-Light-300);

@@ -1,44 +1,57 @@
 .auto {
   padding-bottom: 100px;
   &__item {
-    width: 380px;
     padding: 7px 5px 11px;
     text-align: center;
+    margin: 0 7px;
     border: 1px solid #c4c4c4;
+    transition: all .4s;
+    &:hover{
+      background-color: #5A0D67;
+      color: #fff;
+    }
   }
-  &__item--active {
-    background-color: #5a0d67;
-    color: #fff;
-  }
+
   &__text {
     margin: 23px 0 5px;
   }
 }
-
+.auto-slider{
+  margin-bottom: 100px;
+}
 .slick-dots {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 50px;
   position: relative;
   li {
     cursor: pointer;
-    width: 50px;
-    height: 2px;
     position: relative;
-    background-color: #C4C4C4;
+    width: 50px;
+    height: 1px;
+    padding: 5px 0;
     margin-right: 20px;
     font-size: 0;
+    &::before {
+      content: "";
+      width: 50px;
+      height: 2px;
+      position: absolute;
+      background-color: #c4c4c4;
+    }
     &:last-child {
       margin-right: 0;
     }
   }
-  button{
+  button {
     padding: 5px 0;
   }
 }
 
-li.slick-active{
-  background-color: #5A0D67;
+li.slick-active::before {
+  content: '';
+  background-color: #5a0d67;
   height: 4px;
+  bottom: 2px;
 }
