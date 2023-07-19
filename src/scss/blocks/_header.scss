@@ -1,22 +1,14 @@
 .header {
   background-image: url(../../img/header-bg.jpg);
+  background-size: cover;
   height: 700px;
   position: relative;
   margin-bottom: 200px;
-  &::before{
-    content: '';
-    background-image: url(../../img/ford-bg.png);
-    position: absolute;
-    width: 814px;
-    height: 462px;
-    top: 438px;
-    right: 200px;
-  }
   &__top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 47px  0 45px;
-    margin-bottom: 60px;
   }
   &__number {
     color: #fff;
@@ -30,7 +22,14 @@
     }
   }
   &__content {
-    max-width: 762px;
+    max-width: 1200px;
+    position: relative;
+    padding-top: 60px;
+  }
+  &__content-img{
+    position: absolute;
+    bottom: -275px;
+    right: 0;
   }
   &__title {
     color: var(--title);

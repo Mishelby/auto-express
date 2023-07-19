@@ -6,7 +6,9 @@
 @import "./base/utils";
 @import "./base/containers";
 @import "./base/fonts";
+@import "./base/mixin";
 @import "./base/sticky-footer";
 
 /* Blocks */
 @import "./blocks/*.scss";
+@import "./base/media";
